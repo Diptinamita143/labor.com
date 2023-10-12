@@ -1,0 +1,139 @@
+﻿
+@{
+   // Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .form {
+            width: 100px;
+            height: 120px;
+            position: absolute;
+            top: 50px;
+            left: 870px;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+            .form h2 {
+                width: 220px;
+                font-family: sans-serif;
+                text-align: center;
+                color: orange;
+                font-size: 22px;
+                background-color: white;
+                border-radius: 10px;
+                margin: 2px;
+                padding: 8px;
+            }
+
+            .form input {
+                width: 240px;
+                height: 35px;
+                background: transparent;
+                border-bottom: 1px solid orange;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                color: black;
+                font-size: 15px;
+                letter-spacing: 1px;
+                margin-top: 30px;
+                font-family: sans-serif;
+            }
+
+                .form input:focus {
+                    outline: none;
+                }
+
+        ::placeholder {
+            color: black;
+            font-family: Arial;
+        }
+
+        .btnn {
+            width: 200px;
+            height: 60px;
+            background: orange;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            transition: 0.4s ease;
+        }
+
+        btnn :hover {
+            background: white;
+            color: orange;
+        }
+
+        .btnn a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .form .link {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 10px;
+            text-align: center;
+        }
+
+            .form .link a {
+                text-decoration: none;
+                color: orange;
+            }
+    </style>
+</head>
+  <body>
+      <div class="content">
+          <br />
+          <br /><br /><br />
+         @* <h1>
+              web design  <br />
+              <span>Devloped by dipti</span>
+          </h1>
+          <p class="pan">
+              lorem is a good girl.thats why she is my girl friend
+          </p>*@
+          <div class="col-md-4">
+              <div id="carouselExampleSlideOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item-active">
+                          <img src="~/img/WIN_20211227_20_15_48_Pro (2).jpg" class="d-block w-100" alt=".." />
+                      </div>
+                      <div class="carousel-item-active">
+                          <img src="" class="d-block w-100" alt=".." />
+                      </div>
+                      <div class="carousel-item-active">
+                          <img src="" class="d-block w-100" alt=".." />
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="form">
+              <br />
+              <br />
+
+              <h2>Login Here</h2>
+              <input type="text" placeholder="user name" />
+              <input type="password" name="" placeholder="password here" />
+              <button class="btnn">
+                  <a href="#">Login</a>
+              </button>
+              <p class="link">
+                  Don't have an account<br />
+                  <a href="#">Register</a>
+              </p>
+          </div>
+      </div>
+</body>
+</html>

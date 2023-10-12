@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background: #f1f1f1;
+            padding: 13px;
+            text-align: center;
+        }
+
+        .Diptii {
+            background-color: black;
+            color: black;
+            text-decoration-style: double;
+        }
+
+            .Diptii a {
+                font-size: medium;
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .Diptii a:hover {
+                    background: #ddd;
+                    color: black;
+                }
+
+        .search {
+            width: 330px;
+            float: left;
+            margin-left: 270px;
+        }
+
+        .srch {
+            font-family: 'Times New Roman';
+            width: 200px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid orange;
+            margin-top: 13px;
+            color: black;
+            border-right: none;
+            font-size: 16px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            right: 0;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            background: orange;
+            border: 2px solid orange;
+            margin-top: 13px;
+            color: #fff;
+            font-size: 15px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+
+            .btn:focus {
+                outline: none;
+            }
+
+        .srch:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+     
+        <div class="header">
+            <h1>LABOR ASSOCIATION,Bhubaneswar</h1>
+        </div>
+        <div class="Diptii">
+           @Html.ActionLink("Home", "Index", "kc", new { area = "" }, new { @class = "nav-link" })
+           @Html.ActionLink("About", "About", "Home1", new { area = "" }, new { @class = "nav-link" })
+           @Html.ActionLink("Contact", "Contact", "Home1", new { area = "" }, new { @class = "nav-link" })
+        </div>
+      <div class="search">
+        <input type="search" class="srch" placeholder="type to text" />
+        <a href="#"><button class="btn">search</button> </a>
+      </div>
+      </div>
+    <br />
+    <div class="footer">
+        @*<br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br />
+        <br />
+        <br />*@
+        @RenderBody()
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
